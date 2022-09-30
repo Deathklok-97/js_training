@@ -1,0 +1,83 @@
+Statements 
+A group of words, numbers or operators that perform a specific task is a statement
+i.e. a = b * 2
+
+Expressions
+A statement is made up of one or more expressions. 
+An expression is any reference to a variable or value, or a set of variable(s) and value(s) with combined with operators.
+a = b * 2 has four expressions
+
+2 is a literal value expression
+b is a variable expression, which means to retrieve its current value
+b * 2 is an arithmetic expression, which means to do the multiplication.
+a = b * 2 is an assignment expression, which means to assign the result of b * 2 to the variable a.
+
+Operators
+    Math
+    * (multiplication)
+    + (addition)
+    - (subtraction)
+    / (division)
+
+Compound Assignment
+    +=, -= *=, /=
+    a = a + 1
+
+Equality
+    == (loose equals)
+    === (strict-equals)
+    != (loose not-equals)
+    !=== (string not-equals)
+
+Comparisons
+    < (less than)
+    > (greater than)
+    <= (less than or loose equals)
+    >= (greater than or loose equals)
+
+Logical 
+    && (and)
+    || (or)
+
+Types
+    String
+    Number
+    Boolean
+    Arrays
+    Objects
+    Functions
+
+Converting Between Types
+    var a = ""
+    var b = Number(a)
+
+    console.log(a)
+    console.log(b)
+
+    Number is explicit coercion from any other type to a type of number.
+    When comparing $99.99 to "99.99" you would say they are loosely equals
+
+Code Comments
+    // This is a single-line comment
+    /* This is 
+        a multiline 
+        comment. 
+                */
+
+Variables
+    Track a value as it changes over the course of the program, like a symbolic container.
+    In other languages there is static typing is when the variable has the type assigned to it. 
+        Prevents unintended value conversions.
+    
+    var amount = 99.99
+
+    amount = amount * 2
+
+    console.log(amount)
+
+    amount = "$" + String(amount)
+
+    console.log(amount)
+    
+
+
