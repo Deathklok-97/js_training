@@ -1,0 +1,9 @@
+Truthy & Falsy
+    
+    The specific list of falsy values are as follows:
+    "" (empty string)
+    0, -0, NaN (invalid number)
+    null, undefined
+    false
+
+    Any value that is not falsy is truthy

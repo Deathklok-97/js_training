@@ -15,7 +15,7 @@ Blocks
 Conditionals
     Boolean logic coalesced to control execution flow of an application
     
-    const ACCESSORY_PRICE = 9.99; 
+    var ACCESSORY_PRICE = 9.99; 
 
     var bank_balance = 302.13;
     var amount = 99.99;

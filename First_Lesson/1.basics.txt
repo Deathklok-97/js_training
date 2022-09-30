@@ -40,15 +40,14 @@ Logical
     || (or)
 
 Types
-    String
-    Number
-    Boolean
-    Arrays
-    Objects
-    Functions
+    string
+    number
+    boolean
+    null and undefined
+    symbol
 
 Converting Between Types
-    var a = ""
+    var a = "2"
     var b = Number(a)
 
     console.log(a)
