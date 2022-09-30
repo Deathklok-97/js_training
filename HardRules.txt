@@ -1,0 +1,16 @@
+
+Laws of Programming (from experiences/reasoning/sources)
+1. Don't pass a bool to change the behavior of a Function
+2. Don't mutate parameters
+3. Don't inherit for properties
+4. Don't put logic in a setter
+5. Don't put propositional logic in function definitions
+6. Don't assign meaning to null
+7. Don't negate in variable names 
+8. Don't optimize prematurely
+9. Always check the positive case
+
+Things to remember
+1. Complexity is incremental
+2. Composition over Inheritance
+3. Functions tell they do not ask
