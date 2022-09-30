@@ -37,8 +37,10 @@ Closure
     we get back another reference to its inner add(..) that remembers x as a 10. 
     We call this function reference plusTen(..)
 
-    3. When we call plusOne(3), it adds 3 (its inner y) to the 1 (), and we get 4 as the result.
+    3. When we call plusOne(3), 
+    it adds 3 (its inner y) to the 1 (), 
+    and we get 4 as the result.
 
-    4. When we call plustTen(13), 
-    it adds13 (its inner y) to the 10 (remembered by x), 
+    4. When we call plusTen(13), 
+    it adds 13 (its inner y) to the 10 (remembered by x), 
     and we get 23 as the result.
