@@ -1,0 +1,14 @@
+Variables
+    Track a value as it changes over the course of the program, like a symbolic container.
+    In other languages there is static typing is when the variable has the type assigned to it. 
+        Prevents unintended value conversions.
+    
+    var amount = 99.99;
+
+    amount = amount * 2;
+
+    console.log(amount)
+
+    amount = "$" + String(amount);
+
+    console.log(amount)
