@@ -1,2 +1,30 @@
 Loops
-    Repeating a set of actions until until a certain 
+    Repeating a set of actions until until a certain conditional fails.
+    A loop is comprised a test condition as well as a block. Each time the loop block executes, that's called an iteration.
+
+    while (numOfCustomers > 0) {
+        console.log("How may I help you?")
+        // help
+
+        numOfCustomers = numOfCustomers - 1;
+    }
+
+    do {
+        console.log("How may I help you?");
+        // help
+
+        numberOfCustomers = numOfCustomers - 1;
+    } while (numOfCustomer > 0s);
+
+    the only practical difference is whether the conditional is tested before the first iteration (while) or after the first iteration (do.. while).
+
+
+FOR LOOP
+    the for loop has three clauses: the initialization clause(1), the conditional clause to test(2), and the update clause(3).
+
+    for (expression 1; expression 2; expression 3) {
+        // code block to be executed
+    }
+
+
+Many more to come in later lessons
