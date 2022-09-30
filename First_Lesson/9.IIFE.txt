@@ -1,2 +1,8 @@
 Immediately Invoked Function Expression
 
+    (function IIFE(){
+        console.log ("Hello!")
+    })();
+
+    the outer parenthesis that surrounds the function expression is a nuance of JS grammar 
+    to prevent it from being treated as a normal function declaration.
