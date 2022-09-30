@@ -1,0 +1,9 @@
+ 
+ Polyfilling
+    Taking a definition of a newer feature and producing a piece of code that's equivalent to the behavior, 
+ but is able to run in older JS environments.
+
+ Transpiling
+    Tool that converts your newer code into older code equivalents. 
+    transforming + compiling = Transpiling
+
