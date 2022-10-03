@@ -12,3 +12,28 @@ Hoisting
     }
 
     console.log(a);
+
+
+
+V2: after intro
+Consider 
+
+a = 2;
+
+var a;
+
+console.log( a );
+
+vs.
+
+console.log( a );
+
+var a = 2;
+
+what is the output? It's undefined. It's a chicken-and-the-egg question.
+The best way to think about things is that all declarations, 
+both variables and functions, are processed first, before any part of your code is executed.
+When you see var a = 2;, you probably think of that as one statement. 
+But JavaScript actually thinks of it as two statements: var a; and a = 2;. 
+The first statement, the declaration, is processed during the compilation phase. 
+The second statement, the assignment, is left in place for the execution phase.
