@@ -1,0 +1,45 @@
+Functions + Scope
+
+    Anonymous function expressions are quick and easy to type, and many libraries and tools tend to encourage this idiomatic style of code.
+    Drawbacks:
+
+        Anonymous functions have no useful name to display in stack traces, which can make debugging more difficult.
+
+        Without a name, if the function needs to refer to itself, for recursion, etc., the deprecated arguments.callee reference is unfortunately required.
+
+        Anonymous functions omit a name that is often helpful in providing more readable/understandable code. 
+
+Providing a name for your function expression quite effectively addresses all these draw-backs, but has no tangible downsides. 
+The best practice is to always name your function expressions
+
+Try Catch
+    try {
+    	undefined(); // illegal operation to force an exception!
+    }
+    catch (err) {
+    	console.log( err ); // works!
+    }
+
+    console.log( err ); // ReferenceError: `err` not found
+
+Declarations
+    es6 feature: let
+    The let keyword attaches the variable declaration to the scope of whatever block (commonly a { .. } pair) it's contained in. In other words, 
+    let implicitly hijacks any block's scope for its variable declaration. let can be updated but not re-declared.
+
+    A particular case where let shines is in the for-loop case as we discussed previously.
+
+    for (let i=0; i<10; i++) {
+	    console.log( i );
+    }
+
+    es6 feature: const
+    block-scoped variable, but whose value is fixed (constant). 
+    Any attempt to change that value at a later time results in an error.
+
+    var declarations are globally scoped or function scoped.
+    Any variable that is declared with var outside a function block is available for use in the whole window.
+    var is function scoped when it is declared within a function. This means that it is available and can be accessed only within that function.
+    var becomes a problem when you do not realize that a variable has already been defined before.
+    This is why let and const are necessary.
+
