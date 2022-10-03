@@ -1,0 +1,43 @@
+This 
+
+Example of the confusion
+function identify() {
+	return this.name.toUpperCase();
+}
+
+function speak() {
+	var greeting = "Hello, I'm " + identify.call( this );
+	console.log( greeting );
+}
+
+var me = {
+	name: "Chris"
+};
+
+var you = {
+	name: "Tom"
+};
+
+identify.call( me ); // Chris
+identify.call( you ); // Tom
+
+speak.call( me ); // Hello, I'm Chris
+speak.call( you ); // Hello, I'm Tom
+
+go to binding folder to see examples of this
+
+Summarize the rules for determining this from a function call's call-site, 
+in their order of precedence. Ask these questions in this order, and stop when the first rule applies.
+
+	Called with new? Use the newly constructed object.
+
+	Called with call or apply (or bind)? Use the specified object.
+
+	Called with a context object owning the call? Use that context object.
+
+	Default: undefined in strict mode, global object otherwise.
+
+Instead of the four standard binding rules, 
+ES6 arrow-functions use lexical scoping for this binding, 
+which means they adopt the this binding (whatever it is) from its enclosing function call. 
+They are essentially a syntactic replacement of self = this in pre-ES6 coding.

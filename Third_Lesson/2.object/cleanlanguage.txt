@@ -1,0 +1,30 @@
+Clean Language
+
+/*
+    Page 41
+
+    Technically functions never "belong" to objects,
+    so saying that a function that that just happens to be accessed on an object reference is automatically a "method" 
+    seems a bit of a stretch of semantics.
+    
+    It is true that some functions have this references in them, 
+    and that sometimes these this references refer tot he object reference at the call site.
+    But this usage really does not make that function any more a "method" than any other function, 
+    as this is dynamically bound at runtime, at the call-site, and thus its relationship to the object is indirect, at best.
+*/
+
+function foo(){
+    console.log('foo');
+}
+
+var someFoo = foo; //?
+
+var myObject = {
+    someFoo: foo
+};
+
+foo; //?
+
+someFoo; //?
+
+myObject.someFoo; //?

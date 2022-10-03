@@ -1,0 +1,16 @@
+Default
+
+/*
+    Default Binding pg 13
+    
+    this is actually a binding that is made when a function is invoked, 
+    and what it(this) references is determined entirely 
+    by the call-site where the function is called. 
+*/
+
+function foo() {
+    console.log(this.a); //?
+}
+
+var a = 2;
+foo(); //?

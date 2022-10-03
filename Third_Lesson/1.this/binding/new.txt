@@ -1,0 +1,14 @@
+New
+
+/*
+    New Binding
+    Takes Precedence over Had Binding, What!!!! Page 24
+    Total order detailed on Page 26
+*/
+
+function foo(a) {
+    this.a = a;
+}
+
+var bar = new foo(2);
+console.log(bar.a) //?
