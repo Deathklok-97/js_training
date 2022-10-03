@@ -36,6 +36,7 @@ Declarations
     es6 feature: const
     block-scoped variable, but whose value is fixed (constant). 
     Any attempt to change that value at a later time results in an error.
+    const variables can neither be updated nor re-declared
 
     var declarations are globally scoped or function scoped.
     Any variable that is declared with var outside a function block is available for use in the whole window.
@@ -43,3 +44,9 @@ Declarations
     var becomes a problem when you do not realize that a variable has already been defined before.
     This is why let and const are necessary.
 
+    Just like let, const declarations are hoisted to the top but are not initialized.
+
+    So just in case you missed the differences, here they are:
+
+    They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized.
+    While var and let can be declared without being initialized, const must be initialized during declaration.
