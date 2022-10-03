@@ -5,6 +5,9 @@ Scope Closure
     Closures are created and used for you all over your code.
     What you are missing is the proper mental context to recognize, embrace, and leverage closures for your own will.
 
+    Closure is when a function can remember and access its lexical scope even when it's invoked outside its lexical scope.
+
+
 loops and closures
 
 no worky
@@ -57,3 +60,49 @@ for (let i=1; i<=5; i++) {
 }
 
 
+Module uses closures for example
+function CoolModule() {
+	var something = "cool";
+	var another = [1, 2, 3];
+
+	function doSomething() {
+		console.log( something );
+	}
+
+	function doAnother() {
+		console.log( another.join( " ! " ) );
+	}
+
+	return {
+		doSomething: doSomething,
+		doAnother: doAnother
+	};
+}
+
+var foo = CoolModule();
+
+foo.doSomething(); // cool
+foo.doAnother(); // 1 ! 2 ! 3
+
+es6 modules
+ES6 adds first-class syntax support for the concept of modules. 
+When loaded via the module system, ES6 treats a file as a separate module. 
+Each module can both import other modules or specific API members, as well export their own public API members.
+
+function hello(who) {
+	return "Let me introduce: " + who;
+}
+
+export hello;
+
+
+// import only `hello()` from the "bar" module
+import hello from "bar";
+
+var hungry = "hippo";
+
+function awesome() {
+	console.log(
+		hello( hungry ).toUpperCase()
+	);
+}
