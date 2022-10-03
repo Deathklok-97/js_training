@@ -30,7 +30,7 @@ console.log( a );
 
 var a = 2;
 
-what is the output? It's undefined. It's a chicken-and-the-egg question.
+what is the output? It's undefined. It's the chicken-and-the-egg question.
 The best way to think about things is that all declarations, 
 both variables and functions, are processed first, before any part of your code is executed.
 When you see var a = 2;, you probably think of that as one statement. 
