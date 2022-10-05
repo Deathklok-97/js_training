@@ -1,0 +1,50 @@
+Types
+
+    A type is an intrinsic, built-in set of characteristics 
+    that uniquely identifies the behavior of a particular value 
+    and distinguishes it from other values, both to the engine and to the developer.
+
+JavaScript defines seven built-in types:
+
+    null
+    undefined
+    boolean
+    number
+    string
+    object
+    symbol -- added in ES6!
+    Note: All of these types except object are called "primitives".
+
+
+typeof operator not exactly 1-1 match
+
+typeof undefined     === "undefined"; // true
+typeof true          === "boolean";   // true
+typeof 42            === "number";    // true
+typeof "42"          === "string";    // true
+typeof { life: 42 }  === "object";    // true
+
+// added in ES6!
+typeof Symbol()      === "symbol";    // true
+
+undefined vs "undeclared"
+Variables that have no value currently, actually have the undefined value. 
+Calling typeof against such variables will return "undefined":
+
+var a;
+
+typeof a; // "undefined"
+
+var b = 42;
+var c;
+
+// later
+b = c;
+
+typeof b; // "undefined"
+typeof c; // "undefined"
+
+
+Many developers will assume "undefined" and "undeclared" are roughly the same thing, 
+but in JavaScript, they're quite different. undefined is a value that a declared variable can hold. 
+"Undeclared" means a variable has never been declared.

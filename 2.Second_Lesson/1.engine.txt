@@ -26,3 +26,9 @@ Two distinct actions are taken for a variable assignment:
     First, Compiler declares a variable (if not previously declared in the current scope)
     Second, when executing, Engine looks up the variable in Scope and assigns to it, if found.
 
+Syntax
+    In computer science, the syntax of a computer language is the rules that defines the combinations 
+    of symbols that are considered to be correctly structured statements or expressions in that language.
+    Human languages have syntax. These rules stipulate word order, punctuation and sentence structure.
+    or
+    The set of rules that define what the various combinations of symbols mean
