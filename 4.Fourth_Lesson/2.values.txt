@@ -1,0 +1,6 @@
+Values as Types
+
+    In JavaScript, variables don't have types -- values have types. 
+    Variables can hold any value, at any time.
+
+   

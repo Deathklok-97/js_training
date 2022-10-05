@@ -1,0 +1,15 @@
+Array
+ 
+    As compared to other type-enforced languages, 
+    JavaScript arrays are just containers for any type of value, 
+    from string to number to object to even another array (which is how you get multidimensional arrays).
+    Can hold different types, like an improper list. 
+
+    syntax:
+        var a = [];
+
+    var a = [ 1, "2", [3] ];
+
+    a.length;		// 3
+    a[0] === 1;		// true
+    a[2][0] === 3;	// true

@@ -1,0 +1,34 @@
+Numbers
+
+    JavaScript has just one numeric type: number. This type includes both "integer" values and decimal numbers. 
+    That is, 42.0 is as much an "integer" as 42. 
+    Numbers will be outputted as base-10 decimals, with trailing fractional 0s removed. So:
+
+    var a = 42.300;
+    a; // 42.3
+
+    Very large or very small numbers will by default be outputted in exponent form:
+
+    var a = 5E10;
+    a;					// 50000000000
+    a.toExponential();	// "5e+10"
+
+    Numbers are boxed so they have functions extending functionality
+    
+    var a = 42.59;
+    a.toFixed( 0 ); // "43"
+    a.toPrecision( 2 ); // "43"
+
+    You don't have to use a variable with the value in it to access these methods; 
+    you can access these methods directly on number literals. 
+    But you have to be careful with the . operator. Since . is a valid numeric character, 
+    it will first be interpreted as part of the number literal, if possible, 
+    instead of being interpreted as a property accessor.
+
+    // invalid syntax:
+    42.toFixed( 3 );	// SyntaxError
+
+    // these are all valid:
+    (42).toFixed( 3 );	// "42.000"
+    0.42.toFixed( 3 );	// "0.420"
+    42..toFixed( 3 );	// "42.000"

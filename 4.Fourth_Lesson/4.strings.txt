@@ -1,0 +1,16 @@
+Strings
+
+    It's a very common belief that strings are essentially just arrays of characters. 
+    While the implementation under the covers may or may not use arrays, 
+    it's important to realize that JavaScript strings are really not the same as arrays of characters. 
+    The similarity is mostly just skin-deep.
+
+
+a[1] = "O";
+b[1] = "O";
+
+a; // "foo"
+b; // ["f","O","o"]
+
+A consequence of immutable strings is that none of the string methods that alter its contents can modify in-place, but rather must create and return new strings. 
+By contrast, many of the methods that change array contents actually do modify in-place.
