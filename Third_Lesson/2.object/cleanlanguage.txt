@@ -11,6 +11,8 @@ Clean Language
     and that sometimes these this references refer tot he object reference at the call site.
     But this usage really does not make that function any more a "method" than any other function, 
     as this is dynamically bound at runtime, at the call-site, and thus its relationship to the object is indirect, at best.
+
+    *Inheritance slows peeks in the door*
 */
 
 function foo(){
