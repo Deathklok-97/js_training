@@ -1,0 +1,17 @@
+Natives
+
+Commonly used Natives
+    String()
+    Number()
+    Boolean()
+    Array()
+    Object()
+    Function()
+    RegExp()
+    Date()
+    Error()
+    Symbol()
+
+
+    Date(..) and Error(..) native constructors are much more useful than the other natives, 
+    There is no literal form for either.

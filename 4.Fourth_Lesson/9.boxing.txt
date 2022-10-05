@@ -1,0 +1,22 @@
+Boxing
+
+    Primitive values don't have properties or methods, like 
+    .length or .toString() you need an object wrapper around the value. 
+    JS will automatically box (aka wrap) the primitive value to fulfill such accesses.
+
+    var a = "abc";
+
+    a.length; // 3
+    a.toUpperCase(); // "ABC"
+
+
+    object wrapper around the false value, but objects themselves are "truthy"
+    var a = new Boolean( false );
+
+Unboxing
+
+    You have an object wrapper and you want to get the underlying primitive value out
+    You can use the valueOf() method.
+
+    var a = new String( "abc" );
+    a.valueOf(); // "abc"
