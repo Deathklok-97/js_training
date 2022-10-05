@@ -1,0 +1,45 @@
+Value vs. Reference
+
+    Js is weirdly both 
+    There are no syntactic hints that control value vs. reference assignment/passing. 
+    The type of the value solely controls whether that value will be assigned by value-copy or by reference-copy.
+
+Benefits:
+
+by value:
+    Doesn’t change the original variable, so it is preserving data
+    Never affect the actual contents of the actual arguments
+
+by reference:
+    The address of the variables is used, can change the value of the argument. 
+    Save memory space. 
+    No copy so processed very fast
+
+Negatives:
+
+by value:
+    Changes to actual parameters can also modify corresponding argument variables
+    Arguments must be variables
+    You can’t directly change a variable in a function body.
+    There are two copies created for the same variable which is not memory efficient.
+
+by reference:
+    Strong non-null guarantee. A function taking in a reference need to make sure that the input is non-null. Therefore, null check need not be made.
+    Passing by reference makes the function not pure theoretically.
+    A lifetime guarantee is a big issue with references. This is specifically dangerous when working with lambdas and multi-threaded programs.
+
+Example:
+    var a = 2;
+    var b = a; // `b` is always a copy of the value in `a`
+    b++;
+    a; // 2
+    b; // 3
+
+    var c = [1,2,3];
+    var d = c; // `d` is a reference to the shared `[1,2,3]` value
+    d.push( 4 );
+    c; // [1,2,3,4]
+    d; // [1,2,3,4]
+
+    Simple values (primitives) are always assigned/passed by value-copy: null, undefined, string, number, boolean, and symbol.
+    Compound values -- objects (including arrays, and all boxed object wrappers) and functions -- always create a copy of the reference on assignment or passing.

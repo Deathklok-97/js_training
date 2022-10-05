@@ -9,6 +9,8 @@ Functions + Scope
 
         Anonymous functions omit a name that is often helpful in providing more readable/understandable code. 
 
+
+A Lambda comes from the Lambda Calculus and refers to anonymous functions in programming. symbol of λ
 Providing a name for your function expression quite effectively addresses all these draw-backs, but has no tangible downsides. 
 The best practice is to always name your function expressions
 
