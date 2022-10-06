@@ -1,0 +1,29 @@
+Automatic semi colon insertion
+
+Rule 1
+    A semicolon will be automatically inserted if a token is encountered by the JavaScript parser 
+    that both would not be allowed if a semicolon did not exist, 
+    and that token is separated from the previous by one or more line terminators (eg. newlines), 
+    a closing brace }, or the final parenthesis ()) of a do-while loop.
+
+    In other words: source text locations where statements would always need to be terminated anyway 
+    for a runnable program, will have the statement terminator (;) inserted automatically if it is omitted. 
+    This rule is the heart of ASI.
+
+Rule 2
+    A semicolon will be inserted at the end of the program if the source text is not otherwise a valid script 
+    or module. 
+
+    In other words: programmers can omit the final semicolon in a program.
+
+Rule 3
+    A semicolon will be automatically inserted if a token is encountered that would normally be allowed 
+    if a semicolon did not exist, but exists within one of several special source text locations (restricted productions) 
+    that explicitly disallow line terminators within them for reasons of avoiding ambiguity.
+
+    The restricted productions inside of which line terminators are prohibited are:
+
+    before postfix ++ and postfix -- (so the unary increment/decrement operators after a newline will bind to the following (not previous) statement, as a prefix operator)
+    after continue, break, throw, return, yield
+    after arrow function parameter lists, and
+    after the async keyword in async function declarations & expressions, generator function declarations & expressions & methods, and async arrow functions
