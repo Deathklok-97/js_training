@@ -8,3 +8,32 @@ Syntax
     Some phrases are incomplete and don't accomplish much by themselves, 
     while other phrases can stand on their own. 
     These rules are collectively called the grammar of the English language.
+
+    See lesson 1, basics for statements/expressions
+
+SideEffects
+
+    function foo() {
+	    a = a + 1;
+    }
+
+    var a = 1;
+    foo();		// result: `undefined`, side effect: changed `a`
+
+Common Miss-Explanation
+
+    [] + {}; // "[object Object]"
+    {} + []; // 0
+
+    This seems to imply the + operator gives different results 
+    depending on whether the first operand is the [] or the {}. Completely unrelated
+
+    On the first line, {} appears in the + operator's expression, 
+    and is therefore interpreted as an actual value (an empty object). 
+    [] is coerced to "" 
+    and thus {} is coerced to a string value as well: "[object Object]".
+
+    On the second line, {} is interpreted as a standalone {} empty block (which does nothing). 
+    Blocks don't need semicolons to terminate them, so the lack of one here isn't a problem. 
+    Finally, + [] is an expression that explicitly coerces the [] to a number, 
+    which is the 0 value.

@@ -44,3 +44,5 @@ Conditionals
       default:
         // code block
     }
+
+    default doesn't have to go to end, but it's a strong convention. 

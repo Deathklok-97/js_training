@@ -1,0 +1,13 @@
+Operator Precedence
+
+    && and || are interesting in that they select and return one of their operands,
+    rather than just resulting in true or false. 
+    That's easy to reason about if there are only two operands and one operator.
+
+    var a = 42;
+    var b = "foo";
+
+    a && b;	// "foo"
+    a || b;	// 42
+
+https://www.geeksforgeeks.org/operator-precedence-in-javascript/

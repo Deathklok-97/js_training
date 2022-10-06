@@ -1,0 +1,24 @@
+Destructuring
+
+Object 
+    { .. } pairs showing up is with "destructuring assignments"
+
+    function getData() {
+        return {
+            a: 42,
+            b: "foo"
+        }
+    }
+
+    const { a, b } = getData()
+
+    destructuring shorthand for { a: a, b: b }
+
+Array 
+
+    function getData() {
+        return [ a, b, c ]
+    }
+
+    const [ a, _ , c ] = getData()
+

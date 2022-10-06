@@ -27,3 +27,9 @@ Rule 3
     after continue, break, throw, return, yield
     after arrow function parameter lists, and
     after the async keyword in async function declarations & expressions, generator function declarations & expressions & methods, and async arrow functions
+
+
+ASI (Automatic Semicolon Insertion) is a parser-error-correction mechanism built into the JS engine, 
+which allows it under certain circumstances to insert an assumed ; in places where it is required, was omitted, and where insertion fixes the parser error. 
+The debate rages over whether this behavior implies that most ; are optional (and can/should be omitted for cleaner code) or 
+whether it means that omitting them is making mistakes that the JS engine merely cleans up for you
