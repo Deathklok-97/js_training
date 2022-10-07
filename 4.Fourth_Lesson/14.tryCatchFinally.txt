@@ -1,0 +1,25 @@
+Try Catch Finally
+
+If an error happens in the try block the error will be received by the catch block. 
+Try catch finally can be used in conjunction with one another
+
+try {
+  nonExistentFunction();
+} catch (error) {
+  console.error(error);
+}
+
+try finally example:
+
+function foo() {
+	try {
+		return 42;
+	}
+	finally {
+		console.log( "Hello" );
+	}
+
+	console.log( "never runs" );
+}
+
+console.log( foo() );
