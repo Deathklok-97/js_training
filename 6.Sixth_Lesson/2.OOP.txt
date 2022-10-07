@@ -1,0 +1,9 @@
+Object Oriented Programming
+
+Encapsulation -> Mind your own business
+    
+Inheritance -> I'm kind of like my parents
+    
+Polymorphism -> To my mom, I'm a saint
+             -> To my spouse, I'm a nuisance.
+             -> To my friends, I'm the Dungeon Master
