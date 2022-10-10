@@ -7,3 +7,6 @@ Inheritance -> I'm kind of like my parents
 Polymorphism -> To my mom, I'm a saint
              -> To my spouse, I'm a nuisance.
              -> To my friends, I'm the Dungeon Master
+
+Abstraction -> Wrapping up complex actions in simple verbs. 
+    Describe each thing you’ve abstracted clearly, and hide the complexity.

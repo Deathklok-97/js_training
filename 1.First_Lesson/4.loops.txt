@@ -14,7 +14,7 @@ Loops
         // help
 
         numberOfCustomers = numOfCustomers - 1;
-    } while (numOfCustomer > 0s);
+    } while (numOfCustomer > 0);
 
     the only practical difference is whether the conditional is tested before the first iteration (while) or after the first iteration (do.. while).
 

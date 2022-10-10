@@ -1,4 +1,16 @@
 Functional Programming
 
 
-    
+Pure Functions => Given the same input, always returns the same output. Has no side-effects.
+    Basically, any function that changes its inputs or the value of some external variable is an impure function.
+
+No side effects => Anything which makes a system unpredictable. Logging, IO, console, Api calls.
+    Aims to reduce the occurrence of such effects as much as is possible.
+
+Immutability => The idea that once a value is declared, 
+    it is unchangeable and thus makes behaviors within your program far more predictable.
+
+Referential transparency => Fancy way of saying that if you were to replace a function call 
+    with its return value, the behavior of the programme would be as predictable as before.
+
+Recursion ???
