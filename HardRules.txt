@@ -14,3 +14,21 @@ Things to remember
 1. Complexity is incremental
 2. Composition over Inheritance
 3. Functions tell they do not ask
+
+
+How to Develop an Application
+----------------------------------------
+Mnemonic: Do fun things with big loud worker bees
+----------------------------------------
+Workers-bees: pools/dependencies
+Big: Boundaries (processes) | Loud: Lifecycle (Supervisors) | T hings
+Fun: Functional Core (Logic)                                | e
+Do: Data (models the domain)                                | s
+                                                            | t
+                                                            | s
+
+Steps and Suggestion
+Define most of the ACTIONS the application needs to take to complete a users task.
+General objective is to move the side effects (actions that potentially fail) to the edge of the application.
+The models should be concerned with the domain you're in, and the core is strictly comprised of pure functions surrounded by tests.
+The Supervisors should have strategies for flaky or failing side effects and should respond appropriately.
