@@ -20,6 +20,8 @@ Things to remember
 7. Define errors (and special cases) out of existence
 8. Software should be designed for ease of reading not ease of writing
 
+^-> some taken from "A philosophy of software design" John OusterHout
+
 
 How to Develop an Application
 ----------------------------------------
